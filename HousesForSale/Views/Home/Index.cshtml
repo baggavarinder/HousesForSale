@@ -1,106 +1,490 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
+<!--==============================Content================================-->
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+<div class="l-row l-row--hero">
+    <div class="c-content__hero"></div>
+    <div class="l-row l-row--search">
+        <div class="l-container">
+            <div class="c-content__search">
+                <h2>Find your dream home</h2>
+                <div class="c-content__search-box">
+                    <form class="l-form l-search-form">
+                        <input type="text" class="l-form-control" placeholder="Search; City, State, or Zip.">
+                        <button type="submit" class="l-btn l-btn-primary">Search</button>
+                        <div class="l-dropdown l-dropdown--search">
+                            <div class="l-list__title l-list__title--location">Locations</div>
+                            <ul class="l-list l-list--search">
+                                <li>Sandy, <span class="state">UT</span></li>
+                                <li>Santa Clara, <span class="state">UT</span></li>
+                                <li>Santaquin, <span class="state">UT</span></li>
+                                <li>San Juan County, <span class="state">UT</span></li>
+                                <li>Sanpete County, <span class="state">UT</span></li>
+                            </ul>
+                            <div class="l-divider l-divider--search"></div>
+                            <div class="l-list__title l-list__title--agent">Agents</div>
+                            <ul class="l-list l-list--search">
+                                <li>Sandy Bruce, <span class="state">UT</span></li>
+                                <li>Santa Clause, <span class="state">UT</span></li>
+                                <li>Sanny Winkler, <span class="state">UT</span></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
     </div>
 </div>
+<div class="l-row l-row--recent">
+    <div class="l-container">
+        <h3>recent homes</h3>
+        <div class="c-content__property">
+            <div class="c-content__property-item">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image c-content__property-image--vertical">
+                            <!-- Use this class for vertical images -->
+                            <img src="~/images/property/home-vertical.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $345,000
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--up">
+                                <span class="value">6,5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                472 Ponderosa Dr, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 12
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                4
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                3.0
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                2,785
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item is-favorite">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image h-height">
+                            <!-- Use this class for horizontal images with not enough height -->
+                            <img src="~/images/property/home3.jpeg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $899,500
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--down">
+                                <span class="value">10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                936 S Chappel Valley Loop, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 18
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                5
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                3.5
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                6,150
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image">
+                            <img src="~/images/property/home3.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $459,999
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--none">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                472 Ponderosa Dr, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 14
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                4
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                4.0
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                3,873
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image">
+                            <img src="~/images/property/home4.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $345,000
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--none">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                472 Ponderosa Dr, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 12
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                4
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                3.0
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                2,785
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image">
+                            <img src="~/images/property/home5.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $899,500
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--none">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                936 S Chappel Valley, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 18
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                5
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                3.5
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                6,150
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image">
+                            <img src="~/images/property/home6.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $459,999
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--up">
+                                <span class="value">6,5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                472 Ponderosa Dr, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 14
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                4
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                4.0
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                3,873
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image">
+                            <img src="~/images/property/home7.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $345,000
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--up">
+                                <span class="value">6,5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                472 Ponderosa Dr, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 12
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                4
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                3.0
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                2,785
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image">
+                            <img src="~/images/property/home8.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $899,500
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--none">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                936 S Chappel Valley, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 18
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                5
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                3.5
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                6,150
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+            <div class="c-content__property-item is-favorite">
+                <a href="#">
+                    <div class="c-content__property-main">
+                        <div class="c-content__property-image">
+                            <img src="~/images/property/home9.jpg" alt="">
+                        </div>
+                        <div class="c-content__property-price h-clearfix">
+                            <div class="c-content__property-price-current">
+                                $459,999
+                            </div>
+                            <div class="c-content__property-price-changes c-content__property-price-changes--none">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__property-desc">
+                        <div class="c-content__property-info h-clearfix">
+                            <div class="c-content__property-address">
+                                472 Ponderosa Dr, Alpine
+                            </div>
+                            <div class="c-content__property-photos">
+                                <span>×</span> 14
+                            </div>
+                        </div>
+                        <div class="c-content__property-features h-clearfix">
+                            <div class="c-content__property-feature c-content__property-feature--beds">
+                                4
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--bath">
+                                4.0
+                            </div>
+                            <div class="c-content__property-feature c-content__property-feature--sqft">
+                                3,873
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="c-content__property-favorite"></div>
+            </div>
+        </div>
+        <div class="l-row l-row--center">
+            <a class="l-btn l-btn-more l-btn-more--arrow-right" href="#">See More</a>
+        </div>
+    </div>
+</div>
+<div class="l-row l-row--search-bottom">
+    <div class="l-container">
+        <div class="c-content__search-bottom">
+            <h6>Search for Homes by City</h6>
+            <ul class="l-list c-content__search-list">
+                <li><a href="#">Salt Lake City</a></li>
+                <li><a href="#">West Valley City</a></li>
+                <li><a href="#">Provo</a></li>
+                <li><a href="#">West Jordan</a></li>
+                <li><a href="#">Orem</a></li>
+                <li><a href="#">Sandy</a></li>
+                <li><a href="#">Ogden</a></li>
+                <li><a href="#">St. George</a></li>
+                <li><a href="#">Layton</a></li>
+                <li><a href="#">Millcreek</a></li>
+                <li><a href="#">Taylorsville</a></li>
+                <li><a href="#">South Jordan</a></li>
+                <li><a href="#">Logan</a></li>
+                <li><a href="#">Lehi</a></li>
+                <li><a href="#">Murray</a></li>
+
+                <li><a href="#">Bountiful</a></li>
+                <li><a href="#">Draper</a></li>
+                <li><a href="#">Riverton</a></li>
+                <li><a href="#">Roy</a></li>
+                <li><a href="#">Spanish Fork</a></li>
+                <li><a href="#">Pleasant Grove</a></li>
+                <li><a href="#">Cottonwood Heights</a></li>
+                <li><a href="#">Tooele</a></li>
+                <li><a href="#">Springville</a></li>
+                <li><a href="#">Cedar City</a></li>
+                <li><a href="#">Midvale</a></li>
+                <li><a href="#">Kaysville</a></li>
+                <li><a href="#">Holladay</a></li>
+                <li><a href="#">American Fork</a></li>
+                <li><a href="#">Clearfield</a></li>
+
+                <li><a href="#">Syracuse</a></li>
+                <li><a href="#">South Salt Lake</a></li>
+                <li><a href="#">Herriman</a></li>
+                <li><a href="#">Eagle Mountain</a></li>
+                <li><a href="#">Clinton</a></li>
+                <li><a href="#">Washington</a></li>
+                <li><a href="#">Payson</a></li>
+                <li><a href="#">Farmington</a></li>
+                <li><a href="#">Brigham City</a></li>
+                <li><a href="#">Saratoga Springs</a></li>
+                <li><a href="#">North Ogden</a></li>
+                <li><a href="#">South Ogden</a></li>
+                <li><a href="#">North Salt Lake</a></li>
+                <li><a href="#">Highland</a></li>
+                <li><a href="#">Centerville</a></li>
+
+                <li><a href="#">Hurricane</a></li>
+                <li><a href="#">Heber City</a></li>
+                <li><a href="#">West Haven</a></li>
+                <li><a href="#">Lindon</a></li>
+                <li><a href="#">Cedar Hills</a></li>
+                <li><a href="#">Woods Cross</a></li>
+                <li><a href="#">Alpine</a></li>
+                <li><a href="#">West Point</a></li>
+                <li><a href="#">Smithfield</a></li>
+                <li><a href="#">Santaquin</a></li>
+                <li><a href="#">Vernal</a></li>
+                <li><a href="#">Washington Terrace</a></li>
+                <li><a href="#">Grantsville</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Riverdale</a></li>
+
+                <li><a href="#">North Logan</a></li>
+                <li><a href="#">Mapleton</a></li>
+                <li><a href="#">Pleasant View</a></li>
+                <li><a href="#">Tremonton</a></li>
+                <li><a href="#">Hyrum</a></li>
+                <li><a href="#">Bluffdale</a></li>
+                <li><a href="#">Park City</a></li>
+                <li><a href="#">Richfield</a></li>
+                <li><a href="#">Hooper</a></li>
+                <li><a href="#">Providence</a></li>
+                <li><a href="#">Ivins</a></li>
+                <li><a href="#">Salem</a></li>
+                <li><a href="#">Ephraim</a></li>
+                <li><a href="#">South Weber</a></li>
+                <li><a href="#">Roosevelt</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
