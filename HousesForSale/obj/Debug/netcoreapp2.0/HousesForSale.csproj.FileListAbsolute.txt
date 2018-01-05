@@ -1,0 +1,11 @@
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\bin\Debug\netcoreapp2.0\HousesForSale.deps.json
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\bin\Debug\netcoreapp2.0\HousesForSale.runtimeconfig.json
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\bin\Debug\netcoreapp2.0\HousesForSale.runtimeconfig.dev.json
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\bin\Debug\netcoreapp2.0\HousesForSale.dll
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\obj\Debug\netcoreapp2.0\HousesForSale.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\obj\Debug\netcoreapp2.0\HousesForSale.csproj.CoreCompileInputs.cache
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\obj\Debug\netcoreapp2.0\HousesForSale.AssemblyInfoInputs.cache
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\obj\Debug\netcoreapp2.0\HousesForSale.AssemblyInfo.cs
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\bin\Debug\netcoreapp2.0\HousesForSale.pdb
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\obj\Debug\netcoreapp2.0\HousesForSale.dll
+c:\users\admin\documents\visual studio 2017\Projects\HousesForSale\HousesForSale\obj\Debug\netcoreapp2.0\HousesForSale.pdb
