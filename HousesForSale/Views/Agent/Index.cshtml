@@ -310,107 +310,131 @@
                     Price
                 </div>
             </div>
-            <div class="c-content__homes-row">
-                <div class="c-content__homes-col c-content__homes-col--property">
-                    <div class="c-content__homes-property-photo">
-                        <img src="~/images/property/home5.jpg" />
+            @foreach (var item in ViewBag.saleTest)
+            {
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="@item.Property" />
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                       @Html.Raw(item.Details)
+                        @*<span class="c-content__homes-price">$900,000</span>
+                            <span class="c-content__homes-location">Jamul, CA</span>
+                            <span class="c-content__homes-address">3247 Greystone Dr • Jamul, CA 91935</span>
+                            <span class="c-content__homes-info">7 bed, 4 bath, 6,150 sqft</span>
+                            <span class="c-content__homes-date">Sold date: 09/12/2017</span>*@
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        @item.Represented
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        @item.Price
+                    </div>
+                </div>
+            }
+            @*<div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/property/home5.jpg" />
 
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$900,000</span>
+                        <span class="c-content__homes-location">Jamul, CA</span>
+                        <span class="c-content__homes-address">3247 Greystone Dr • Jamul, CA 91935</span>
+                        <span class="c-content__homes-info">7 bed, 4 bath, 6,150 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 09/12/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Seller
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $900,000
+                    </div>
+                </div>*@
+            @*<div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/property/home4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$490,000</span>
+                        <span class="c-content__homes-location">El Cajon, CA</span>
+                        <span class="c-content__homes-address">9951 Watergum Trl • Santee, CA 92071</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 07/21/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Buyer
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $490,000
                     </div>
                 </div>
-                <div class="c-content__homes-col c-content__homes-col--details">
-                    <span class="c-content__homes-price">$900,000</span>
-                    <span class="c-content__homes-location">Jamul, CA</span>
-                    <span class="c-content__homes-address">3247 Greystone Dr • Jamul, CA 91935</span>
-                    <span class="c-content__homes-info">7 bed, 4 bath, 6,150 sqft</span>
-                    <span class="c-content__homes-date">Sold date: 09/12/2017</span>
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--represented">
-                    Seller
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--price">
-                    $900,000
-                </div>
-            </div>
-            <div class="c-content__homes-row">
-                <div class="c-content__homes-col c-content__homes-col--property">
-                    <div class="c-content__homes-property-photo">
-                        <img src="~/images/property/home4.jpg" alt="">
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/property/home12.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$529,000</span>
+                        <span class="c-content__homes-location">Santee, CA</span>
+                        <span class="c-content__homes-address">627 Hawthorne Ave • El Cajon, CA 92020</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 09/11/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Buyer
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $529,000
                     </div>
                 </div>
-                <div class="c-content__homes-col c-content__homes-col--details">
-                    <span class="c-content__homes-price">$490,000</span>
-                    <span class="c-content__homes-location">El Cajon, CA</span>
-                    <span class="c-content__homes-address">9951 Watergum Trl • Santee, CA 92071</span>
-                    <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
-                    <span class="c-content__homes-date">Sold date: 07/21/2017</span>
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--represented">
-                    Buyer
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--price">
-                    $490,000
-                </div>
-            </div>
-            <div class="c-content__homes-row">
-                <div class="c-content__homes-col c-content__homes-col--property">
-                    <div class="c-content__homes-property-photo">
-                        <img src="~/images/property/home12.jpg" alt="">
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/property/home6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$555,000</span>
+                        <span class="c-content__homes-location">La Mesa, CA</span>
+                        <span class="c-content__homes-address">9565 Janfred Way • La Mesa, CA 91942</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 07/11/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Buyer
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $555,000
                     </div>
                 </div>
-                <div class="c-content__homes-col c-content__homes-col--details">
-                    <span class="c-content__homes-price">$529,000</span>
-                    <span class="c-content__homes-location">Santee, CA</span>
-                    <span class="c-content__homes-address">627 Hawthorne Ave • El Cajon, CA 92020</span>
-                    <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
-                    <span class="c-content__homes-date">Sold date: 09/11/2017</span>
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--represented">
-                    Buyer
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--price">
-                    $529,000
-                </div>
-            </div>
-            <div class="c-content__homes-row">
-                <div class="c-content__homes-col c-content__homes-col--property">
-                    <div class="c-content__homes-property-photo">
-                        <img src="~/images/property/home6.jpg" alt="">
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/property/home7.jpg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--details">
-                    <span class="c-content__homes-price">$555,000</span>
-                    <span class="c-content__homes-location">La Mesa, CA</span>
-                    <span class="c-content__homes-address">9565 Janfred Way • La Mesa, CA 91942</span>
-                    <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
-                    <span class="c-content__homes-date">Sold date: 07/11/2017</span>
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--represented">
-                    Buyer
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--price">
-                    $555,000
-                </div>
-            </div>
-            <div class="c-content__homes-row">
-                <div class="c-content__homes-col c-content__homes-col--property">
-                    <div class="c-content__homes-property-photo">
-                        <img src="~/images/property/home7.jpg" alt="">
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$1,265,000</span>
+                        <span class="c-content__homes-location">La Mesa, CA</span>
+                        <span class="c-content__homes-address">5160 Alzeda Dr • La Mesa, CA 91941</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 07/07/2017</span>
                     </div>
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--details">
-                    <span class="c-content__homes-price">$1,265,000</span>
-                    <span class="c-content__homes-location">La Mesa, CA</span>
-                    <span class="c-content__homes-address">5160 Alzeda Dr • La Mesa, CA 91941</span>
-                    <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
-                    <span class="c-content__homes-date">Sold date: 07/07/2017</span>
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--represented">
-                    Seller
-                </div>
-                <div class="c-content__homes-col c-content__homes-col--price">
-                    $1,265,000
-                </div>
-            </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Seller
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $1,265,000
+                    </div>
+                </div>*@
         </div>
         <ul class="l-list l-list--pagination h-hide-on-tablet">
             <li class="l-list__pagination-control l-list__pagination-control--prev l-list__pagination-control--disabled">
